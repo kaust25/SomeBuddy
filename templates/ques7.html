@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/css/card.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomeBuddy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body{
+            background: url('../static/images/panoramic-view-foliage-tropical-forest-trees/2805830.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('input:checkbox').click(function() {
+                $('input:checkbox').not(this).prop('checked', false);
+            });
+        });
+        </script>
+</head>
+<body>
+    <main>
+        <form action="" method="post">
+            
+            <!--change-->
+            <div class="container">
+            <div class="flip">
+                <div class="front">
+                   <h1>Are you having any nightmares ? </hi>
+                </div>
+                <div class="back">
+                   <h2>Your Answer:</h2>
+                   <input type="checkbox" id="yes-opt" value="1" name="yes-opt" class="inputs">Yes <br>
+                   <input type="checkbox" value="0" name="yes-opt" class="inputs">No <br>
+                   <input type="checkbox" value="0.5" name="yes-opt" class="inputs">May Be <br>
+                   <button type="submit" class="sub-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+        </form>
+        <a href="/result" class="next-link">NEXT</a>
+    </main>
+</body>
+</html>
